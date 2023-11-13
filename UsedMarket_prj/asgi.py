@@ -1,5 +1,5 @@
 """
-ASGI config for UsedMarket_prj project.
+ASGI config for freeColumn_prj project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'UsedMarket_prj.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'freeColumn_prj.settings')
 
 application = get_asgi_application()

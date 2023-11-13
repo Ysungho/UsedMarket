@@ -1,5 +1,5 @@
 """
-WSGI config for UsedMarket_prj project.
+WSGI config for freeColumn_prj project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'UsedMarket_prj.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'freeColumn_prj.settings')
 
 application = get_wsgi_application()
