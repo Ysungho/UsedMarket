@@ -1,6 +1,6 @@
 {% extends 'blog/base_full_width.html' %}
 {% load crispy_forms_tags %}
-{% block head_title %}글 수정 - 글{% endblock %}
+{% block head_title %}Edit Post - Blog{% endblock %}
 
 {% block main_area %}
     <h1>글 수정하기</h1>
@@ -8,7 +8,7 @@
     <form method="post" enctype="multipart/form-data">{% csrf_token %}
         {{ form | crispy }}
         <div id="div_id_tags_str">
-            <label for="id_tags_str">태그:</label>
+            <label for="id_tags_str">Tags:</label>
             <input type="text" name="tags_str" id="id_tags_str" class="textinput textInput form-control"
                    value="{{ tags_str_default }}">
         </div>

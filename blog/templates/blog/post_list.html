@@ -9,7 +9,7 @@
         {% endif %}
     {% endif %}
 
-    <h1>목록
+    <h1>Articles
         {% if search_info %}<small class="text-muted">{{ search_info }}</small>{% endif %}
         {% if category %}<span class="badge badge-secondary">{{ category }}</span>{% endif %}
         {% if tag %}<span class="badge badge-light"><i
@@ -45,7 +45,7 @@
                     <a href="{{ p.get_absolute_url }}" class="btn btn-primary">더 보기 &rarr;</a>
                 </div>
                 <div class="card-footer text-muted">
-                    작성자: {{ p.created_at }}
+                    Posted on {{ p.created_at }} by
                     <a href="#">{{ p.author | upper }}</a>
                 </div>
             </div>
